@@ -150,6 +150,12 @@ header a {
   text-shadow: 2px 2px #000;
 }
 
+#tags span:active {
+  position: relative;
+  bottom: 2px;
+  right: 2px;
+}
+
 .tag-1,
 .tag-2,
 .tag-3 {
