@@ -40,7 +40,6 @@ a:active {
   color: red;
 }
 
-
 /* --- Cabeçalho --- */
 header {
   background-color: rgba(0, 0, 0, .95);
@@ -60,9 +59,15 @@ header a {
 
 #menu-de-navegacao ul {
   margin-bottom: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
 }
 
-
+#menu-de-navegacao ul li a {
+  padding: 1em 3em;
+}
 
 /* --- Conteúdo principal da página --- */
 #conteudo-principal {
@@ -70,9 +75,6 @@ header a {
   transition: opacity 1s linear;
   padding-bottom: 3em;
 }
-
-
-
 
 /* --- Principal >> Postagens principais --- */
 #posts-principais {
@@ -103,9 +105,6 @@ header a {
   margin-bottom: .5em;
 }
 
-
-
-
 /* --- Principal >> Últimas postagens --- */
 #ultimas-postagens {
   margin-top: 3em;
@@ -133,13 +132,10 @@ header a {
   display: inline-block;
 }
 
-
-
-
 /* --- Principal >> Nuvem de tags --- */
 #tags {
   float: right;
-  width: 300px;
+  width: 270px;
   padding: 15px;
   background-color: black;
   background-image: url(imgs/mula.webp);
@@ -174,10 +170,6 @@ header a {
   font-size: 150%;
 }
 
-
-
-
-
 /* --- Rodapé --- */
 footer {
   background-color: rgba(0, 0, 0, .7);
@@ -188,10 +180,6 @@ footer {
 footer .logo-rodape {
   margin-right: 2em;
 }
-
-
-
-
 
 /* --- Vídeo --- */
 .backdrop {
