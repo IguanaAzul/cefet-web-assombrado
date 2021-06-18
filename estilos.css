@@ -91,10 +91,28 @@ header a {
   margin-left: 2.5%;
   margin-right: 2.5%;
   display: inline-block;
+  position: relative;
 }
 
 #posts-principais article .titulo {
   text-shadow: 1px 1px black;
+  position: absolute;
+  top: 10px;
+  padding: 15px;
+  opacity: 0;
+  background-color: rgba(150, 255, 230, 0.4);
+  cursor: pointer;
+  transition: all 200ms ease; /* <---- */
+}
+
+#posts-principais article .titulo:hover {
+  opacity: 1;
+  top: 0;
+}
+
+#posts-principais article .titulo:active {
+  opacity: 1;
+  background-color: rgba(255, 150, 100, 0.4);
 }
 
 #posts-principais article img {
@@ -132,6 +150,17 @@ header a {
   display: inline-block;
 }
 
+.novidade::before {
+  content: "Novidade!";
+  display: inline-block;
+  background: #4fc423;
+  border-radius: 5px;
+  padding: 3px;
+  margin-right: 1em;
+  border: 2px solid #003b00;
+}
+
+
 /* --- Principal >> Nuvem de tags --- */
 #tags {
   float: right;
@@ -149,16 +178,7 @@ header a {
   margin-bottom: 1em;
   text-shadow: 2px 2px #000;
 }
-
-#tags span:active {
-  position: relative;
-  bottom: 2px;
-  right: 2px;
-}
-
-.tag-1,
-.tag-2,
-.tag-3 {
+.tag-1, .tag-2, .tag-3 {
   display: inline-block;
   border-radius: 2px;
   padding: 2px 4px;
@@ -174,6 +194,17 @@ header a {
 
 .tag-3 {
   font-size: 150%;
+}
+
+#tags span:hover {
+  cursor: pointer;
+}
+
+#tags span:active {
+  position: relative;
+  bottom: 2px;
+  right: 2px;
+  background-color: orangered
 }
 
 /* --- Rodapé --- */
