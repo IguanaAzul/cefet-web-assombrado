@@ -172,6 +172,8 @@ header a {
   background-size: 300px;
   box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
   text-align: center;
+  position: sticky;
+  top: 0;
 }
 
 #tags h1 {
@@ -205,6 +207,37 @@ header a {
   bottom: 2px;
   right: 2px;
   background-color: orangered
+}
+
+.boo {
+  position: absolute;
+  opacity: 0.2;
+  width: 50px;
+}
+
+#boo1 {
+  left: 1%;
+  top: 1%;
+}
+
+#boo2 {
+  bottom: 12%;
+  right: 2%;
+  transform: scaleX(-1);
+}
+
+#boo3 {
+  top: 30%;
+  right: 25%;
+  transform: scaleX(-1);
+}
+
+.boo:hover {
+  opacity: 1;
+}
+
+.boo:active {
+  opacity: 0;
 }
 
 /* --- Rodapé --- */
